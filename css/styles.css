@@ -53,6 +53,31 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    fill: #ffffff;
+    background-color: var(--accent-color);
+}
 /* ========END BODY======== */
 
 /* ========START HEDER======== */
@@ -253,6 +278,13 @@ header {
     margin-right: 30px;
 }
 
+.features-pict {
+    margin-bottom: 30px;
+    background-color: var(--section-background-color);
+    border-radius: 4px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .section-features-list-title {
     margin-bottom: 10px;
     font-size: 14px;
@@ -297,7 +329,11 @@ header {
 .section-team-descr {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
     background-color: var(--primary-backgroun-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .section-team-member {
     margin-bottom: 10px;
@@ -309,11 +345,40 @@ header {
 }
 
 .section-team-position {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
 }
 
+
+/* -----SECTION CLIENTS----- */
+
+.section-clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .section-clients-list-item {
+
+} */
+
+.section-clients-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.section-clients-list-link:hover,
+.section-clients-list-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
 /* ========END MAIN======== */
 
 /* ========START FOOTER======== */
@@ -321,6 +386,14 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #2F303A;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-wraper-left {
+margin-right: 70px;
 }
 
 .footer-logo {
@@ -342,7 +415,27 @@ header {
 color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
+.footer-wraper-right {
+    padding-top: 12px;
+}
+
+.footer-social-list-link {
+    fill: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background: var(--accent-color);
+}
 /* ========END FOOTER======== */
 
 /* ========START PORTFOLIO======== */
@@ -405,6 +498,15 @@ color: rgba(255, 255, 255, 0.6);
 .portfolio-list-item:nth-child(3n) {
     margin-right: 0px;
 } 
+
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
+    display: block;
+    box-shadow: 
+        0px 1px 1px rgba(0, 0, 0, 0.12), 
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-text {
     padding-top: 20px;
