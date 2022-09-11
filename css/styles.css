@@ -147,41 +147,37 @@ header {
 }
 
 .contacts-list-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
 .contacts-list-link:hover,
 .contacts-list-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .email-img {
     margin-right: 10px;
-    fill: var(--primary-text-color);
-}
-
-.email-img:hover,
-.email-img:focus {
-    fill: var(--accent-color);
 }
 
 .phone-img {
     margin-right: 10px;
-    fill: var(--primary-text-color);
-}
-
-.phone-img:hover,
-.phone-img:focus {
-    fill: var(--accent-color);
 }
 
 /* ========END HEDER======== */
 
 /* ========START HERO======== */
 .hero {
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
@@ -278,13 +274,17 @@ header {
     margin-right: 30px;
 }
 
-.features-pict {
+.features-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
     margin-bottom: 30px;
-    background-color: var(--section-background-color);
+    background: var(--section-background-color);
     border-radius: 4px;
-    padding-left: 100px;
-    padding-right: 100px;
 }
+
 .section-features-list-title {
     margin-bottom: 10px;
     font-size: 14px;
@@ -390,6 +390,7 @@ header {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-wraper-left {
@@ -421,10 +422,6 @@ color: rgba(255, 255, 255, 0.6);
     line-height: 1.14;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-.footer-wraper-right {
-    padding-top: 12px;
 }
 
 .footer-social-list-link {
